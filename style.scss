@@ -1,0 +1,58 @@
+@use "reset.css";
+
+/* Typography and basic elements */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  min-height: 90vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+}
+
+footer {
+    position: relative;   
+    bottom: 0;
+}
+
+/* Layout */
+
+.wrapper {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox {
+  margin: 0 auto;
+  max-width: 400px;
+  max-height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 29px 80px -40px #7280a7;
+  background-color: #fff;
+}
+#lightbox {
+  display: flex;
+  border: 1px solid;
+  border-radius: 10px;
+  background: url(images/bg-pattern-desktop.svg) no-repeat;
+  .panel {
+      flex: 1;
+  }
+}
+
+/* Elements */
+details > summary {
+  list-style-type: none;
+  &::after {
+    content: url(images/icon-arrow-down.svg);
+  }
+}

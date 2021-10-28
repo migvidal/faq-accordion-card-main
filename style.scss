@@ -32,31 +32,44 @@ footer {
 
 #lightbox {
   display: flex;
-  align-items: center;
-  border: 1px solid;
+  align-items: stretch;
   border-radius: 10px;
   margin: 0 auto;
   width: 90%;
   max-width: 600px;
   height: 20rem;
   max-height: 600px;
-  overflow: hidden;
+  //overflow: hidden;
   box-shadow: 0 29px 80px -40px #7280a7;
+
   .panel {
-    flex: 1;
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
   }
   .background {
-    background: url(images/bg-pattern-desktop.svg);
-    margin-left: -10rem;
-    background-size: 90%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: 500px;
     background-repeat: no-repeat;
-    height: 100%;
-    
+    background-position: -320px -100px;
+    .glued-images {
+      height: 200px;
+      width: 234px;
+      .cropper {
+        overflow: hidden;
+
+        .static-img {
+          margin-left: -38px;
+        }
+      }
+      .floating-img {
+        position: relative;
+        width: 78px;
+        top: -105px;
+        left: -38px;
+      }
+    }
   }
-  
-}
-.floating-img {
-  position: relative;
 }
 
 /* Elements */

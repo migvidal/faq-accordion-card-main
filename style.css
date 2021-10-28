@@ -113,28 +113,37 @@ footer {
 }
 
 #lightbox {
-  margin: 0 auto;
-  max-width: 400px;
-  max-height: 600px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 29px 80px -40px #7280a7;
-  background-color: #fff;
-}
-
-#lightbox {
   display: flex;
+  align-items: center;
   border: 1px solid;
   border-radius: 10px;
-  background: url(images/bg-pattern-desktop.svg) no-repeat;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  height: 20rem;
+  max-height: 600px;
+  overflow: hidden;
+  box-shadow: 0 29px 80px -40px #7280a7;
 }
 #lightbox .panel {
   flex: 1;
+}
+#lightbox .background {
+  background: url(images/bg-pattern-desktop.svg);
+  margin-left: -10rem;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.floating-img {
+  position: relative;
 }
 
 /* Elements */
 details > summary {
   list-style-type: none;
+  font-weight: bold;
 }
 details > summary::after {
   content: url(images/icon-arrow-down.svg);

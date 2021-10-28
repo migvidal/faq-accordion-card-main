@@ -114,6 +114,7 @@ footer {
 
 #lightbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   border-radius: 10px;
   margin: 0 auto;

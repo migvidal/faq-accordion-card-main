@@ -4,7 +4,7 @@
 
 //@use ".scss";
 /* Breakpoints */
-$mobile-width: 375px;
+$mobile-width: 768px;
 $desktop-width: 1440px;
 /* Colors */
 //text primary
@@ -69,6 +69,7 @@ hr {
   align-items: stretch;
   border-radius: 10px;
   margin: 0 auto;
+  margin-top: 100px;
   width: 90%;
   max-width: 600px;
   //overflow: hidden;
@@ -119,16 +120,20 @@ details {
     justify-content: space-between;
 
     .arrow {
-      margin: 0 1rem;
-      &::after {
-        content: "&nbsp;";
+      margin-left: 1rem;
+      &:after {
         content: url(images/icon-arrow-down.svg);
         white-space: nowrap;
+        display: block;
+        transition: transform 0.2s ease;
       }
     }
   }
   &[open] > summary {
     font-weight: bold;
+    .arrow:after {
+      transform: rotate(0.5turn);
+    }
   }
   p {
     color: $dark-grayish-blue;

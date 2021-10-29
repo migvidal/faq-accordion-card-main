@@ -140,6 +140,7 @@ hr {
   align-items: stretch;
   border-radius: 10px;
   margin: 0 auto;
+  margin-top: 100px;
   width: 90%;
   max-width: 600px;
   box-shadow: 0 29px 80px -40px #7280a7;
@@ -186,21 +187,25 @@ details > summary {
   justify-content: space-between;
 }
 details > summary .arrow {
-  margin: 0 1rem;
+  margin-left: 1rem;
 }
-details > summary .arrow::after {
-  content: "&nbsp;";
+details > summary .arrow:after {
   content: url(images/icon-arrow-down.svg);
   white-space: nowrap;
+  display: block;
+  transition: transform 0.2s ease;
 }
 details[open] > summary {
   font-weight: bold;
+}
+details[open] > summary .arrow:after {
+  transform: rotate(0.5turn);
 }
 details p {
   color: #787887;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .glued-images {
     margin: 0 auto;
     margin-top: -110px;

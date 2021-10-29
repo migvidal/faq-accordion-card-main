@@ -148,7 +148,6 @@ hr {
 #lightbox .panel {
   flex: 1 0 50%;
   display: flex;
-  align-items: center;
 }
 #lightbox .panel .center {
   width: 100%;
@@ -162,6 +161,7 @@ hr {
 #lightbox .background .glued-images {
   height: 200px;
   width: 234px;
+  margin-top: 100px;
 }
 #lightbox .background .glued-images .cropper {
   overflow: hidden;
@@ -207,8 +207,8 @@ details p {
 
 @media screen and (max-width: 768px) {
   .glued-images {
-    margin: 0 auto;
-    margin-top: -110px;
+    margin: 0 auto !important;
+    margin-top: -110px !important;
   }
   .glued-images .cropper {
     overflow: visible !important;

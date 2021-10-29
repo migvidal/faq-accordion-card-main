@@ -78,7 +78,6 @@ hr {
   .panel {
     flex: 1 0 50%;
     display: flex;
-    align-items: center;
     .center {
       width: 100%;
     }
@@ -91,6 +90,7 @@ hr {
     .glued-images {
       height: 200px;
       width: 234px;
+      margin-top: 100px;
       .cropper {
         overflow: hidden;
 
@@ -142,8 +142,8 @@ details {
 
 @media screen and (max-width: $mobile-width) {
   .glued-images {
-    margin: 0 auto;
-    margin-top: -110px;
+    margin: 0 auto !important;
+    margin-top: -110px !important;
     .cropper {
       overflow: visible !important;
       img {

@@ -82,6 +82,17 @@ select {
     display: inline;
   }
 }
+/* Thinner hr */
+hr {
+  border: none;
+  height: 1px;
+}
+
+/* VARIABLES */
+/* Breakpoints */
+/* Colors */
+/* Typography */
+/* END VARIABLES */
 /* Typography and basic elements */
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -98,9 +109,20 @@ h6 {
   font-size: initial;
 }
 
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
 footer {
   position: relative;
   bottom: 0;
+}
+
+hr {
+  color: #e7e7e9;
+  background-color: #e7e7e9;
 }
 
 /* Layout */
@@ -156,10 +178,18 @@ footer {
 /* Elements */
 details > summary {
   list-style-type: none;
-  font-weight: bold;
+  color: #4a4b5e;
 }
 details > summary::after {
+  content: "&nbsp;";
   content: url(images/icon-arrow-down.svg);
+  white-space: nowrap;
+}
+details[open] > summary {
+  font-weight: bold;
+}
+details p {
+  color: #787887;
 }
 
 @media screen and (max-width: 375px) {
@@ -178,6 +208,7 @@ details > summary::after {
   }
 
   #lightbox .background {
+    height: 120px;
     background-size: 230px;
     background-position: center -114px;
   }

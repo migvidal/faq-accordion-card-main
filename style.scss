@@ -78,8 +78,7 @@ hr {
   width: 90%;
   max-width: 600px;
   background-color: #fff;
-  box-shadow: 0 29px 80px -40px #7280a7;
-
+  box-shadow: 0 60px 84px -39px #1d1e35;
   .panel {
     flex: 1 0 50%;
     display: flex;
@@ -119,6 +118,7 @@ hr {
 /* Elements */
 details {
   & > summary {
+    margin: 0.7rem 0;
     list-style-type: none;
     color: $very-dark-grayish-blue;
     display: flex;

@@ -162,4 +162,25 @@ details > summary::after {
   content: url(images/icon-arrow-down.svg);
 }
 
+@media screen and (max-width: 375px) {
+  .glued-images {
+    margin: 0 auto;
+    margin-top: -110px;
+  }
+  .glued-images .cropper {
+    overflow: visible !important;
+  }
+  .glued-images .cropper img {
+    margin: 0 !important;
+  }
+  .glued-images .floating-img {
+    left: 0 !important;
+  }
+
+  #lightbox .background {
+    background-size: 230px;
+    background-position: center -114px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

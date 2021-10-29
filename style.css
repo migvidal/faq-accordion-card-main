@@ -149,6 +149,9 @@ hr {
   display: flex;
   align-items: center;
 }
+#lightbox .panel .center {
+  width: 100%;
+}
 #lightbox .background {
   background-image: url(images/bg-pattern-desktop.svg);
   background-size: 500px;
@@ -179,8 +182,13 @@ hr {
 details > summary {
   list-style-type: none;
   color: #4a4b5e;
+  display: flex;
+  justify-content: space-between;
 }
-details > summary::after {
+details > summary .arrow {
+  margin: 0 1rem;
+}
+details > summary .arrow::after {
   content: "&nbsp;";
   content: url(images/icon-arrow-down.svg);
   white-space: nowrap;

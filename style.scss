@@ -78,6 +78,9 @@ hr {
     flex: 1 0 50%;
     display: flex;
     align-items: center;
+    .center {
+      width: 100%;
+    }
   }
   .background {
     background-image: url(images/bg-pattern-desktop.svg);
@@ -112,11 +115,16 @@ details {
   & > summary {
     list-style-type: none;
     color: $very-dark-grayish-blue;
+    display: flex;
+    justify-content: space-between;
 
-    &::after {
-      content: "&nbsp;";
-      content: url(images/icon-arrow-down.svg);
-      white-space: nowrap;
+    .arrow {
+      margin: 0 1rem;
+      &::after {
+        content: "&nbsp;";
+        content: url(images/icon-arrow-down.svg);
+        white-space: nowrap;
+      }
     }
   }
   &[open] > summary {

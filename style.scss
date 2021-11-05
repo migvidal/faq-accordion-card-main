@@ -48,7 +48,9 @@ h1 {
 
 footer {
   margin: 0;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 0;
+
   .attribution {
     font-size: 11px;
     color: $very-dark-grayish-blue;
@@ -69,7 +71,8 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  border-radius: 10px;
+  border-radius: 20px;
+
   margin: 0 auto;
   margin-top: 150px;
   width: 90%;
@@ -77,33 +80,35 @@ hr {
   background-color: #fff;
   box-shadow: 0 60px 84px -39px #1d1e35;
   .panel {
-    flex: 1 0 50%;
+    flex: 1 0 315px;
     display: flex;
     .center {
       width: 100%;
-      margin: 0 2rem 2rem 2rem;
+      margin: 2rem;
+      margin-left: 0;
     }
   }
   .background {
     background-image: url(images/bg-pattern-desktop.svg);
-    background-size: 500px;
+    height: 350px;
+    background-size: 700px;
+    background-position: -405px -212px;
     background-repeat: no-repeat;
-    background-position: -320px -100px;
     .glued-images {
       width: 355px;
-      margin-top: 100px;
+      margin-top: 50px;
       .cropper {
         overflow: hidden;
 
         .static-img {
-          margin-left: -38px;
+          margin-left: -60px;
         }
       }
       .floating-img {
         position: relative;
-        width: 109px;
-        top: -140px;
-        left: -52px;
+        width: 149px;
+        top: -177px;
+        left: -73px;
       }
     }
   }
@@ -112,7 +117,7 @@ hr {
 /* Elements */
 details {
   & > summary {
-    margin: 0.7rem 0;
+    margin: 0.6rem 0;
     list-style-type: none;
     color: $very-dark-grayish-blue;
     display: flex;
@@ -133,6 +138,7 @@ details {
   }
   &[open] > summary {
     font-weight: bold;
+    margin-bottom: 0.3rem;
     .arrow:after {
       transform: rotate(0.5turn);
     }
@@ -143,6 +149,9 @@ details {
 }
 
 @media screen and (max-width: $mobile-width) {
+  .center {
+    margin-left: 2rem !important;
+  }
   .glued-images {
     margin: 0 auto !important;
     margin-top: -110px !important;
@@ -155,16 +164,5 @@ details {
     .floating-img {
       left: 0 !important;
     }
-  }
-
-  #lightbox .background {
-    height: 120px;
-    background-size: 640px;
-    background-position: -379px -148px;
-  }
-}
-@media screen and (min-width: $desktop-width) {
-  #lightbox .panel .center {
-    margin-left: 0 !important;
   }
 }

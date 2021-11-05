@@ -217,6 +217,14 @@ details p {
     margin-left: 2rem !important;
   }
 
+  #lightbox .background {
+    background-image: url(images/bg-pattern-mobile.svg) !important;
+    height: 250px;
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .glued-images {
     margin: 0 auto !important;
     margin-top: -110px !important;

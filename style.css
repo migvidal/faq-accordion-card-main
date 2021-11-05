@@ -218,6 +218,7 @@ details p {
   }
   .glued-images .cropper img {
     margin: 0 !important;
+    filter: drop-shadow(16px 16px 10px black);
   }
   .glued-images .floating-img {
     left: 0 !important;

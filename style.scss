@@ -90,12 +90,12 @@ hr {
   }
   .background {
     background-image: url(images/bg-pattern-desktop.svg);
-    height: 350px;
     background-size: 700px;
     background-position: -405px -212px;
     background-repeat: no-repeat;
     .glued-images {
       width: 355px;
+      height: 320px;
       margin-top: 50px;
       .cropper {
         overflow: hidden;
@@ -151,15 +151,19 @@ details {
 @media screen and (max-width: $mobile-width) {
   .center {
     margin-left: 2rem !important;
+    margin-top: 0 !important;
+    h1 {
+      text-align: center;
+    }
   }
   #lightbox .background {
     background-image: url(images/bg-pattern-mobile.svg) !important;
-    height: 250px;
     background-size: 350px;
-    background-position: center;
+    background-position: center 40px;
     background-repeat: no-repeat;
   }
   .glued-images {
+    height: 300px !important;
     margin: 0 auto !important;
     margin-top: -110px !important;
     .cropper {

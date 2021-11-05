@@ -42,8 +42,8 @@ h6 {
 
 h1 {
   font-size: 1.5rem;
-  text-align: center;
-  margin: 1rem;
+  text-align: left;
+  margin: 1rem 0;
 }
 
 footer {
@@ -65,9 +65,6 @@ hr {
 
 /* Layout */
 
-.wrapper {
-}
-
 #lightbox {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +73,7 @@ hr {
   margin: 0 auto;
   margin-top: 150px;
   width: 90%;
-  max-width: 600px;
+  max-width: 710px;
   background-color: #fff;
   box-shadow: 0 60px 84px -39px #1d1e35;
   .panel {
@@ -84,6 +81,7 @@ hr {
     display: flex;
     .center {
       width: 100%;
+      margin: 0 2rem 2rem 2rem;
     }
   }
   .background {
@@ -92,8 +90,7 @@ hr {
     background-repeat: no-repeat;
     background-position: -320px -100px;
     .glued-images {
-      height: 200px;
-      width: 234px;
+      width: 355px;
       margin-top: 100px;
       .cropper {
         overflow: hidden;
@@ -104,14 +101,11 @@ hr {
       }
       .floating-img {
         position: relative;
-        width: 78px;
-        top: -105px;
-        left: -38px;
+        width: 109px;
+        top: -140px;
+        left: -52px;
       }
     }
-  }
-  .text .center {
-    margin: 0 2rem 2rem 2rem;
   }
 }
 
@@ -165,7 +159,12 @@ details {
 
   #lightbox .background {
     height: 120px;
-    background-size: 230px;
-    background-position: center -114px;
+    background-size: 640px;
+    background-position: -379px -148px;
+  }
+}
+@media screen and (min-width: $desktop-width) {
+  #lightbox .panel .center {
+    margin-left: 0 !important;
   }
 }

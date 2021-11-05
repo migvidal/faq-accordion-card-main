@@ -189,6 +189,9 @@ details > summary {
   display: flex;
   justify-content: space-between;
 }
+details > summary:hover {
+  color: #f47c57;
+}
 details > summary .arrow {
   margin-left: 1rem;
 }
@@ -218,7 +221,6 @@ details p {
   }
   .glued-images .cropper img {
     margin: 0 !important;
-    filter: drop-shadow(16px 16px 10px black);
   }
   .glued-images .floating-img {
     left: 0 !important;

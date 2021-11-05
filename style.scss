@@ -123,6 +123,9 @@ details {
     color: $very-dark-grayish-blue;
     display: flex;
     justify-content: space-between;
+    &:hover {
+      color: $soft-red;
+    }
 
     .arrow {
       margin-left: 1rem;
@@ -153,8 +156,6 @@ details {
       overflow: visible !important;
       img {
         margin: 0 !important;
-        //box-shadow: 0 39px 83px -44px;
-        filter: drop-shadow(16px 16px 10px black);
       }
     }
     .floating-img {

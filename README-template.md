@@ -33,15 +33,11 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/migvidal/faq-accordion-card-main-simple/](https://github.com/migvidal/faq-accordion-card-main-simple/)
-- Live Site URL: []()
+- Live Site URL: [https://migvidal.github.io/faq-accordion-card-main-simple/](https://migvidal.github.io/faq-accordion-card-main-simple/)
 
 ## My process
 
 ### Built with
-
-- Vue.js
-- [React](https://reactjs.org/) - JS library
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox

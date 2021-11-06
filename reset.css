@@ -75,12 +75,16 @@ select {
 
 /* Details, except for IE and non-Chromium Edge*/
 @supports not (-ms-ime-align: auto) {
-  details summary {
+  details > summary {
     cursor: pointer;
+    outline: none;
   }
 
-  details summary > * {
+  details > summary > * {
     display: inline;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
   }
 }
 

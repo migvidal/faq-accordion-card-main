@@ -204,9 +204,6 @@ details > summary {
 details > summary:hover {
   color: #f47c57;
 }
-details > summary .arrow {
-  margin-left: 1rem;
-}
 details > summary .arrow:after {
   content: url(images/icon-arrow-down.svg);
   white-space: nowrap;

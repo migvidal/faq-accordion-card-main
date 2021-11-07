@@ -80,6 +80,7 @@ select {
 details > summary {
   outline: none;
 }
+
 details > summary::-webkit-details-marker {
   display: none;
 }

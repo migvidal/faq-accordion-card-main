@@ -40,7 +40,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -68,20 +68,29 @@ select {
 *::before,
 *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-/* Details, except for IE and non-Chromium Edge*/
+/* Details */
+details > summary {
+  outline: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 @supports not (-ms-ime-align: auto) {
-  details summary {
+  details > summary {
     cursor: pointer;
+    outline: none;
   }
 
-  details summary > * {
+  details > summary > * {
     display: inline;
   }
 }
@@ -246,3 +255,5 @@ details p {
     left: 0 !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

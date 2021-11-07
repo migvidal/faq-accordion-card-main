@@ -121,6 +121,7 @@ details {
     list-style-type: none;
     color: $very-dark-grayish-blue;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     &:hover {
       color: $soft-red;

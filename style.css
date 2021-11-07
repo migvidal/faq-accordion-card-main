@@ -199,6 +199,7 @@ details > summary {
   list-style-type: none;
   color: #4a4b5e;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 details > summary:hover {
@@ -252,3 +253,5 @@ details p {
     left: 0 !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
